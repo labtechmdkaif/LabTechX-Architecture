@@ -1,16 +1,14 @@
-# LabTechX-Architecture
-Offline-first diagnostic &amp; pathology ERP architecture built with Electron.js, Node.js, SQLite.
 # LabTechX — Production-Grade Offline-First Diagnostic ERP
 
 LabTechX is an enterprise-grade, standalone diagnostic laboratory ERP designed for zero-latency clinical workflows, local persistence, and offline operability. Built using Electron.js, WebAssembly-based SQLite, and an embedded micro-service runtime, the system eliminates cloud roundtrips while providing comprehensive laboratory operations, commercial DRM, and hardware-locked compliance.
 
+---
 
-
- Core System Architecture
+## 🏗️ Core System Architecture
 
 The application is structured into four interconnected engine layers connected via an omnipresent event and IPC runtime:
 
-
+```text
 +---------------------------------------------------------------------------------------+
 |                                    PRESENTATION LAYER                                 |
 |   Central Hub (index) | Patient Intake (newpatients) | Clinical Engine (reportmaker)  |
@@ -83,3 +81,4 @@ Procurement & Inventory: Supplier catalogs, multi-item purchase vouchers, side-b
 Governance & Security: Multi-tenant user base (Admin + User slots), granular parent-child permission masks (auth-element), and two-factor deletion guards with dynamic captchas.
 
 ---
+
